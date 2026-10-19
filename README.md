@@ -223,15 +223,6 @@ pip install -e ".[dev]"
 pytest
 ```
 
-## Roadmap
-
-- [x] v1: core, sync+async, 30 methods, CI
-- [x] v2: FSM, middleware, inline mode, payments, admin surface, error taxonomy
-- [ ] Conversation shortcuts (`bot.register_next_step_handler`)
-- [ ] Local Bot API server file helpers (large uploads)
-- [ ] `LinkPreviewOptions` / Bot API 7.x+ fields
-- [ ] Publish to PyPI
-
 ## Acknowledgements
 
 Design inspiration: **pyTelegramBotAPI** (handler ergonomics) and **aiogram** (FSM & middleware
