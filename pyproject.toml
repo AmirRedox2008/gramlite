@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gramlite"
+version = "2.0.0"
+description = "A lightweight, from-scratch Telegram Bot API framework — sync + async, FSM, middleware, inline mode."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "AmirRedox2008", email = "amirdrgo@gmail.com" }]
+keywords = ["telegram", "bot", "api", "framework", "async", "fsm", "chatbot", "webhook"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Chat",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Typing :: Typed",
+]
+dependencies = [
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+async = ["aiohttp>=3.9"]
+redis = ["redis>=4.2"]
+dev = ["pytest>=7.0", "aiohttp>=3.9"]
+
+[project.urls]
+Homepage = "https://github.com/AmirRedox2008/gramlite"
+Documentation = "https://github.com/AmirRedox2008/gramlite#readme"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+gramlite = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
