@@ -31,7 +31,7 @@ libraries: clean layering, honest trade-offs, and a test suite that runs fully o
 
 - **Full sync (`Bot`) and async (`AsyncBot`) APIs** sharing one router, one filter model and one
   type system — write a handler once, port it by changing one keyword.
-- **50+ Bot API methods**: messages, media uploads (path / bytes / file-like / file_id / URL),
+- **55+ Bot API methods**: messages, media uploads (path / bytes / file-like / file_id / URL),
   albums, polls, dice, venues, contacts, chat administration, invite links, join requests,
   commands & profile management, inline mode, payments pre-checkout.
 - **Handler system** with first-match-wins routing and AND-combined filters:
